@@ -1,9 +1,9 @@
 using MedicalService.Driver;
 using MedicalService.Page;
 
-namespace MedicalService
+namespace MedicalService.Tests
 {
-    public class Tests
+    public class MedicalTest
     {
         LoginPage loginPage;
         MedicalPage medicalPage;
@@ -17,8 +17,6 @@ namespace MedicalService
         }
 
         [TearDown]
-
-        [Test]
         public void Close()
         {
             WebDrivers.CleanUp();
